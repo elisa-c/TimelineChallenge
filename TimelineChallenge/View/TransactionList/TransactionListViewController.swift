@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  TransactionListViewController.swift
 //  TimelineChallenge
 //
 //  Created by Elisa Camillo on 03/12/22.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class TransactionListViewController: UIViewController {
 
     // MARK: - Constants
-    private unowned var _view: MainView { return self.view as! MainView }
+    private unowned var _view: TransactionListView { return self.view as! TransactionListView }
 
     // MARK: - Lifecycle
     override public func loadView() {
-        self.view = MainView()
+        self.view = TransactionListView()
     }
 
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  TransactionListView.swift
 //  TimelineChallenge
 //
 //  Created by Elisa Camillo on 04/12/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: UIView {
+class TransactionListView: UIView {
 
     // MARK: - Init
     public override init(frame: CGRect) {
