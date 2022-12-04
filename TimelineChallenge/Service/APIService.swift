@@ -8,6 +8,7 @@
 import Foundation
 
 class APIService {
+    // MARK: - Constants
     static let baseURL = "https://desafio-it-server.herokuapp.com/"
 
     private enum Endpoint: String {
@@ -15,6 +16,7 @@ class APIService {
         case categories = "categorias"
     }
 
+    // MARK: - Methods
     static func getTransactions(completion: @escaping(Result<[Transaction], Error>) -> Void) {
         let URLString = baseURL + Endpoint.transactions.rawValue
         guard let URL = URL(string: URLString) else {
@@ -26,7 +28,6 @@ class APIService {
         request.httpMethod = "GET"
 
         URLSession.shared.dataTask(with: request) { data, URLResponse, error in
-
             if let error = error {
                 print(error)
                 completion(.failure(error))
