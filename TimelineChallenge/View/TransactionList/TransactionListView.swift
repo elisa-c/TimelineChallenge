@@ -28,7 +28,6 @@ class TransactionListView: UIView {
     func makeTableView() -> UITableView {
         let tableView = UITableView()
         tableView.separatorStyle = .none
-        tableView.rowHeight = UITableView.automaticDimension
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }

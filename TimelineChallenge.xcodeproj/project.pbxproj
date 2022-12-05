@@ -20,6 +20,8 @@
 		6A2D83D8293D43D600E4A5AA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83D7293D43D600E4A5AA /* APIService.swift */; };
 		6A2D83DA293D46ED00E4A5AA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83D9293D46ED00E4A5AA /* CustomError.swift */; };
 		6A2D83DC293D4A7A00E4A5AA /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83DB293D4A7A00E4A5AA /* TransactionListViewModel.swift */; };
+		6A8ACAA0293D7980007B1A5E /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8ACA9F293D7980007B1A5E /* TransactionTableViewCell.swift */; };
+		6A8ACAA2293E2A8E007B1A5E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8ACAA1293E2A8E007B1A5E /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		6A2D83D7293D43D600E4A5AA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		6A2D83D9293D46ED00E4A5AA /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		6A2D83DB293D4A7A00E4A5AA /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		6A8ACA9F293D7980007B1A5E /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		6A8ACAA1293E2A8E007B1A5E /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 			children = (
 				6A2D83C9293CF9F800E4A5AA /* TransactionListView.swift */,
 				6A2D839D293BCE8D00E4A5AA /* TransactionListViewController.swift */,
+				6A8ACA9F293D7980007B1A5E /* TransactionTableViewCell.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			children = (
 				6A2D83CE293D13E800E4A5AA /* UIViewController+Extension.swift */,
 				6A2D83D9293D46ED00E4A5AA /* CustomError.swift */,
+				6A8ACAA1293E2A8E007B1A5E /* CustomColors.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 				6A2D83CA293CF9F800E4A5AA /* TransactionListView.swift in Sources */,
 				6A2D83D8293D43D600E4A5AA /* APIService.swift in Sources */,
 				6A2D83DC293D4A7A00E4A5AA /* TransactionListViewModel.swift in Sources */,
+				6A8ACAA2293E2A8E007B1A5E /* CustomColors.swift in Sources */,
 				6A2D83D5293D400500E4A5AA /* Transaction.swift in Sources */,
+				6A8ACAA0293D7980007B1A5E /* TransactionTableViewCell.swift in Sources */,
 				6A2D839A293BCE8D00E4A5AA /* AppDelegate.swift in Sources */,
 				6A2D83CF293D13E800E4A5AA /* UIViewController+Extension.swift in Sources */,
 				6A2D839C293BCE8D00E4A5AA /* SceneDelegate.swift in Sources */,
