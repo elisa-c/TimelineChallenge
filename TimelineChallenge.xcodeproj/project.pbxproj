@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		6A2D839A293BCE8D00E4A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D8399293BCE8D00E4A5AA /* AppDelegate.swift */; };
 		6A2D839C293BCE8D00E4A5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D839B293BCE8D00E4A5AA /* SceneDelegate.swift */; };
-		6A2D839E293BCE8D00E4A5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D839D293BCE8D00E4A5AA /* ViewController.swift */; };
+		6A2D839E293BCE8D00E4A5AA /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D839D293BCE8D00E4A5AA /* TransactionListViewController.swift */; };
 		6A2D83A3293BCE9000E4A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D83A2293BCE9000E4A5AA /* Assets.xcassets */; };
 		6A2D83B1293BCE9000E4A5AA /* TimelineChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83B0293BCE9000E4A5AA /* TimelineChallengeTests.swift */; };
 		6A2D83BB293BCE9000E4A5AA /* TimelineChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83BA293BCE9000E4A5AA /* TimelineChallengeUITests.swift */; };
 		6A2D83BD293BCE9000E4A5AA /* TimelineChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83BC293BCE9000E4A5AA /* TimelineChallengeUITestsLaunchTests.swift */; };
+		6A2D83CA293CF9F800E4A5AA /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83C9293CF9F800E4A5AA /* TransactionListView.swift */; };
+		6A2D83CF293D13E800E4A5AA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83CE293D13E800E4A5AA /* UIViewController+Extension.swift */; };
+		6A2D83D5293D400500E4A5AA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83D4293D400500E4A5AA /* Transaction.swift */; };
+		6A2D83D8293D43D600E4A5AA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83D7293D43D600E4A5AA /* APIService.swift */; };
+		6A2D83DA293D46ED00E4A5AA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83D9293D46ED00E4A5AA /* CustomError.swift */; };
+		6A2D83DC293D4A7A00E4A5AA /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D83DB293D4A7A00E4A5AA /* TransactionListViewModel.swift */; };
+		6A8ACAA0293D7980007B1A5E /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8ACA9F293D7980007B1A5E /* TransactionTableViewCell.swift */; };
+		6A8ACAA2293E2A8E007B1A5E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8ACAA1293E2A8E007B1A5E /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,7 @@
 		6A2D8396293BCE8D00E4A5AA /* TimelineChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D8399293BCE8D00E4A5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A2D839B293BCE8D00E4A5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6A2D839D293BCE8D00E4A5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A2D839D293BCE8D00E4A5AA /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
 		6A2D83A2293BCE9000E4A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A2D83A7293BCE9000E4A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2D83AC293BCE9000E4A5AA /* TimelineChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +53,14 @@
 		6A2D83B6293BCE9000E4A5AA /* TimelineChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D83BA293BCE9000E4A5AA /* TimelineChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineChallengeUITests.swift; sourceTree = "<group>"; };
 		6A2D83BC293BCE9000E4A5AA /* TimelineChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A2D83C9293CF9F800E4A5AA /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		6A2D83CE293D13E800E4A5AA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		6A2D83D4293D400500E4A5AA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		6A2D83D7293D43D600E4A5AA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6A2D83D9293D46ED00E4A5AA /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		6A2D83DB293D4A7A00E4A5AA /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		6A8ACA9F293D7980007B1A5E /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		6A8ACAA1293E2A8E007B1A5E /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,14 @@
 		6A2D8398293BCE8D00E4A5AA /* TimelineChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				6A2D8399293BCE8D00E4A5AA /* AppDelegate.swift */,
-				6A2D839B293BCE8D00E4A5AA /* SceneDelegate.swift */,
-				6A2D839D293BCE8D00E4A5AA /* ViewController.swift */,
-				6A2D83A2293BCE9000E4A5AA /* Assets.xcassets */,
 				6A2D83A7293BCE9000E4A5AA /* Info.plist */,
+				6A2D83D2293D3EDE00E4A5AA /* Resources */,
+				6A2D83D1293D3EBC00E4A5AA /* Core */,
+				6A2D83CD293D138D00E4A5AA /* Utility */,
+				6A2D83D6293D438A00E4A5AA /* Service */,
+				6A2D83D0293D22D600E4A5AA /* Model */,
+				6A2D83CC293CFA7C00E4A5AA /* View */,
+				6A2D83D3293D3F7B00E4A5AA /* ViewModel */,
 			);
 			path = TimelineChallenge;
 			sourceTree = "<group>";
@@ -119,6 +138,75 @@
 				6A2D83BC293BCE9000E4A5AA /* TimelineChallengeUITestsLaunchTests.swift */,
 			);
 			path = TimelineChallengeUITests;
+			sourceTree = "<group>";
+		};
+		6A2D83CB293CF9FC00E4A5AA /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83C9293CF9F800E4A5AA /* TransactionListView.swift */,
+				6A2D839D293BCE8D00E4A5AA /* TransactionListViewController.swift */,
+				6A8ACA9F293D7980007B1A5E /* TransactionTableViewCell.swift */,
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		6A2D83CC293CFA7C00E4A5AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83CB293CF9FC00E4A5AA /* TransactionList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A2D83CD293D138D00E4A5AA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83CE293D13E800E4A5AA /* UIViewController+Extension.swift */,
+				6A2D83D9293D46ED00E4A5AA /* CustomError.swift */,
+				6A8ACAA1293E2A8E007B1A5E /* CustomColors.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6A2D83D0293D22D600E4A5AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83D4293D400500E4A5AA /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A2D83D1293D3EBC00E4A5AA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D8399293BCE8D00E4A5AA /* AppDelegate.swift */,
+				6A2D839B293BCE8D00E4A5AA /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6A2D83D2293D3EDE00E4A5AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83A2293BCE9000E4A5AA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6A2D83D3293D3F7B00E4A5AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83DB293D4A7A00E4A5AA /* TransactionListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A2D83D6293D438A00E4A5AA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D83D7293D43D600E4A5AA /* APIService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +338,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2D839E293BCE8D00E4A5AA /* ViewController.swift in Sources */,
+				6A2D839E293BCE8D00E4A5AA /* TransactionListViewController.swift in Sources */,
+				6A2D83DA293D46ED00E4A5AA /* CustomError.swift in Sources */,
+				6A2D83CA293CF9F800E4A5AA /* TransactionListView.swift in Sources */,
+				6A2D83D8293D43D600E4A5AA /* APIService.swift in Sources */,
+				6A2D83DC293D4A7A00E4A5AA /* TransactionListViewModel.swift in Sources */,
+				6A8ACAA2293E2A8E007B1A5E /* CustomColors.swift in Sources */,
+				6A2D83D5293D400500E4A5AA /* Transaction.swift in Sources */,
+				6A8ACAA0293D7980007B1A5E /* TransactionTableViewCell.swift in Sources */,
 				6A2D839A293BCE8D00E4A5AA /* AppDelegate.swift in Sources */,
+				6A2D83CF293D13E800E4A5AA /* UIViewController+Extension.swift in Sources */,
 				6A2D839C293BCE8D00E4A5AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
