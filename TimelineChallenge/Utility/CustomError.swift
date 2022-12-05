@@ -9,6 +9,7 @@ import Foundation
 
 enum CustomError {
     case wrongURL
+    case brokenData
 }
 
 extension CustomError: LocalizedError {
@@ -16,6 +17,8 @@ extension CustomError: LocalizedError {
         switch self {
         case .wrongURL:
             return "URL Inválida"
+        case .brokenData:
+            return "Resposta inválida"
         }
     }
 }

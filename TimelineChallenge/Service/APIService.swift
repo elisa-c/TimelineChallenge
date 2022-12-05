@@ -27,24 +27,28 @@ class APIService {
         var request = URLRequest(url: URL)
         request.httpMethod = "GET"
 
-        URLSession.shared.dataTask(with: request) { data, URLResponse, error in
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let httpResponse = response as? HTTPURLResponse {
+                print("statusCode: \(httpResponse.statusCode)")
+            }
+
             if let error = error {
-                print(error)
                 completion(.failure(error))
                 return
             }
 
-            guard let data = data else { return }
+            guard let data = data else {
+                completion(.failure(CustomError.brokenData))
+                return
+            }
 
             do {
                 let transactions = try JSONDecoder().decode([Transaction].self, from: data)
                 completion(.success(transactions))
-            } catch let error {
-                print(error)
-                completion(.failure(error))
+            } catch _ {
+                completion(.failure(CustomError.brokenData))
             }
         }.resume()
-
     }
 }
 

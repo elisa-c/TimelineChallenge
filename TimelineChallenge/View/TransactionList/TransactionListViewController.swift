@@ -11,6 +11,13 @@ class TransactionListViewController: UIViewController {
 
     // MARK: - Constants
     private unowned var _view: TransactionListView { return self.view as! TransactionListView }
+    private var viewModel: TransactionListViewModel!
+
+    // MARK: - Init
+    convenience init(viewModel: TransactionListViewModel) {
+        self.init()
+        self.viewModel = viewModel
+    }
 
     // MARK: - Lifecycle
     override public func loadView() {
@@ -20,6 +27,14 @@ class TransactionListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Transações Recentes"
+        loadData()
+    }
+
+    // MARK: - Methods
+    func loadData() {
+        viewModel.loadData(completion: { error in
+            self.showAlert(title: "Erro!", message: error)
+        })
     }
 }
 
